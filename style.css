@@ -21,27 +21,27 @@ body{
 .container img:nth-child(4n){
     width: 500px;
     bottom: 200px;
-    animation: mymove 100s infinite;
+    animation: mymove 150s infinite;
 }
 
 .container img:nth-child(4n+1){
     width: 300px;
     left: 400px;
-    animation: mymove 100s infinite;
+    animation: mymove 150s infinite;
     animation-delay: 10s;
 }
 
 .container img:nth-child(4n+2){
     width: 200px;
     left: 700px;
-    animation: mymove 100s infinite;
+    animation: mymove 150s infinite;
     animation-delay: 5s;
 }
 
 .container img:nth-child(4n+3){
     width: 600px;
     left: 500px;
-    animation: mymove 100s infinite;
+    animation: mymove 150s infinite;
     animation-delay: 15s;
 }
 
