@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Screen Saver</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="clock">
+
+    </div>
+    
+    <div class="container">
+        <img src="./assets/images/w1.jpg" alt="w1">
+        <img src="./assets/images/w2.jpg" alt="w2">
+        <img src="./assets/images/w3.jpg" alt="w3">
+        <img src="./assets/images/w4.jpg" alt="w4">
+        <img src="./assets/images/w5.jpg" alt="w5">
+        <img src="./assets/images/w6.jpg" alt="w6">
+        <img src="./assets/images/w7.jpg" alt="w7">
+        <img src="./assets/images/w8.jpg" alt="w8">
+        <img src="./assets/images/w9.jpg" alt="w9">
+        <img src="./assets/images/w10.jpg" alt="w10">
+        <img src="./assets/images/w11.jpg" alt="w11">
+        <img src="./assets/images/w12.jpg" alt="w12">
+        <img src="./assets/images/w13.jpg" alt="w13">
+        <img src="./assets/images/w14.jpg" alt="w14">
+        <img src="./assets/images/w15.jpg" alt="w15">
+        <img src="./assets/images/w16.jpg" alt="w16">
+        <img src="./assets/images/w17.jpg" alt="w17">
+        <img src="./assets/images/w18.jpg" alt="w18">
+        <img src="./assets/images/w19.jpg" alt="w19">
+        <img src="./assets/images/w20.jpg" alt="w20">
+        <img src="./assets/images/w21.jpg" alt="w21">
+        <img src="./assets/images/w22.jpg" alt="w22">
+        <img src="./assets/images/w23.jpg" alt="w23">
+        <img src="./assets/images/w24.jpg" alt="w24">
+        <img src="./assets/images/w25.jpg" alt="w25">
+        <img src="./assets/images/w26.jpg" alt="w26">
+        <img src="./assets/images/w27.jpg" alt="w27">
+        <img src="./assets/images/w28.jpg" alt="w28">
+        <img src="./assets/images/w29.jpg" alt="w29">
+        <img src="./assets/images/w30.jpg" alt="w30">
+        <img src="./assets/images/w31.jpg" alt="w31">
+        <img src="./assets/images/w32.jpg" alt="w32">
+        <img src="./assets/images/w33.jpg" alt="w33">
+        <img src="./assets/images/w34.jpg" alt="w34">
+        <img src="./assets/images/w35.jpg" alt="w35">
+        <img src="./assets/images/w36.jpg" alt="w36">
+        <img src="./assets/images/w37.jpg" alt="w37">
+        <img src="./assets/images/w38.jpg" alt="w38">
+        <img src="./assets/images/w39.jpg" alt="w39">
+        <img src="./assets/images/w40.jpg" alt="w40">
+        <img src="./assets/images/w41.jpg" alt="w41">
+        <img src="./assets/images/w42.jpg" alt="w42">
+        <img src="./assets/images/w43.jpg" alt="w43">
+        <img src="./assets/images/w44.jpg" alt="w44">
+        <img src="./assets/images/w45.jpg" alt="w45">
+        <img src="./assets/images/w46.jpg" alt="w46">
+        <img src="./assets/images/w47.jpg" alt="w47">
+        <img src="./assets/images/w48.jpg" alt="w48">
+        <img src="./assets/images/w49.jpg" alt="w49">
+        <img src="./assets/images/w50.jpg" alt="w50">
+        <img src="./assets/images/w51.jpg" alt="w51">
+        <img src="./assets/images/w52.jpg" alt="w52">
+        <img src="./assets/images/w53.jpg" alt="w53">
+        <img src="./assets/images/w54.jpg" alt="w54">
+        <img src="./assets/images/w55.jpg" alt="w55">
+        <img src="./assets/images/w56.jpg" alt="w56">
+        <img src="./assets/images/w57.jpg" alt="w57">
+        <img src="./assets/images/w58.jpg" alt="w58">
+        <img src="./assets/images/w59.jpg" alt="w59">
+        <img src="./assets/images/w60.jpg" alt="w60">
+        <img src="./assets/images/w61.jpg" alt="w61">
+        <img src="./assets/images/w62.jpg" alt="w62">
+        <img src="./assets/images/w63.jpg" alt="w63">
+        <img src="./assets/images/w64.jpg" alt="w64">
+        <img src="./assets/images/w65.jpg" alt="w65">
+        <img src="./assets/images/w66.jpg" alt="w66">
+        <img src="./assets/images/w67.jpg" alt="w67">
+        <img src="./assets/images/w68.jpg" alt="w68">
+        <img src="./assets/images/w69.jpg" alt="w69">
+    </div>
+
+    <script>
+        function clock() {
+      let date = new Date();
+      let hrs = date.getHours();
+      let mins = date.getMinutes();
+      let secs = date.getSeconds();
+      let period = "AM";
+    
+      if (hrs == 0) hrs = 12;
+      if (hrs > 12) {
+        hrs = hrs - 12;
+        period = "PM";
+      }
+    
+      hrs = hrs < 10 ? `0${hrs}` : hrs;
+      mins = mins < 10 ? `0${mins}` : mins;
+      secs = secs < 10 ? `0${secs}` : secs;
+    
+      let time = `${hrs}:${mins}:${secs} ${period}`;
+      setInterval(clock, 1000);
+      document.getElementById("clock").innerText = time;
+    }
+    
+    clock();
+
+    </script>
+
+</body>
+</html>
